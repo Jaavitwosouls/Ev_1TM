@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+header{
+    width: 100%;
+    height: 1000px;
+    background-image: url('../img/portada.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#inicio{
+    margin: -10px;
+    font-family: Arial,"Helvetica Neue" ,Helvetica, sans-serif;
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.6;
+
+}
+#inicio h1{
+    font-size: 40px;
+}
+#inicio .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    border: #000000 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#inicio p{
+    font-size: 20px;
+
+}
+#inicio .button:hover{
+    background:rgba(192, 203, 212, 0.747);
+    color: #fff;
+
+}
+#section-a{
+    padding: 20px;
+    background: rgba(90, 117, 143, 0.747);
+    color:black;
+    text-align: center;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(55, 129, 129, 0.747);
+}
+#contenedor1{
+    background-image: url('../img/particules.svg');
+    width: 100%;
+    height: 1000px;
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+.caja__trasera button:hover{ 
+    background: #fff;
+    color: #4dad40;
+}
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -40%;
+    left: 30%;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 90%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+    right: 360%;
+    top: 7rem;
+}
+
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4dad40;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #4dad40;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register{
+    display: none;
+}
+
+@media screen and(max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+    .contenedor__login-register{
+        top: -10px;
+        left: -500px;
+        margin: auto;
+    }
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+img{
+    max-width: 100%;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+.titulo_formulario{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #131b12;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+#tabla__registro th, td{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+}
